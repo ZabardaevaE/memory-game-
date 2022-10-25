@@ -38,6 +38,8 @@ function App() {
       .map((card) => ({...card, id: Math.random()})) 
       
   //5) to update the current state of the cards I use setCards function 
+  setChoiceOne(null)
+  setChoiceTwo(null)
   setCards(shuffledCards) 
   setTurns(0)   
   }
@@ -79,6 +81,13 @@ function App() {
     setDisabled(false)
   }
 
+  //start a new game automatically
+  useEffect(() => {
+    shuffledCards()
+  }, [])
+
+
+
 
   return (
     <div className="App">
@@ -98,6 +107,7 @@ function App() {
           
         ))}
       </div>
+      <p>Turns: {turns}</p>
     </div>
   );
 }
