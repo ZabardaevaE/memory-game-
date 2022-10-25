@@ -22,6 +22,8 @@ function App() {
   const [choiceOne, setChoiceOne] = useState(null)
   // when user click on second card it will update the choiceTwo to be that card
   const [choiceTwo, setChoiceTwo] = useState(null)
+  //disabled state after two cards click so the comparison happened before next card clicked
+  const [disabled, setDisabled] = useState(false)
 
 
 
@@ -48,6 +50,7 @@ function App() {
   // compare 2 selected cards
   useEffect(() => {
     if (choiceOne && choiceTwo) {
+      setDisabled(true)
       if (choiceOne.src === choiceTwo.src) {
        setCards(prevCards => {
         return prevCards.map(card =>{
@@ -73,6 +76,7 @@ function App() {
     setChoiceOne(null)
     setChoiceTwo(null)
     setTurns(prevTurns => prevTurns + 1)
+    setDisabled(false)
   }
 
 
@@ -89,6 +93,7 @@ function App() {
           card={card}
           handleChoice={handleChoice}
           flipped={card === choiceOne || card === choiceTwo || card.matched}
+          disabled={disabled}
          />
           
         ))}
