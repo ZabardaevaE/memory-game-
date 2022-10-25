@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css';
+import './Button.css';
 import SingleCard from './components/SingleCard';
 
 //add matched property to the cards
@@ -124,8 +125,6 @@ function App() {
     <div class="snowflake">
     ❄
     </div>
- 
-  
         <ul id="wire">
             <li></li>
             <li></li>
@@ -167,8 +166,9 @@ function App() {
         <br />
       <h1>Magic Memory</h1>
     {/*I use on click function to initiate the shuffleCards()  */}
-      <button onClick={shuffledCards}>New Game</button> 
-
+      <div className="centerer">
+        <button onClick={shuffledCards}>New Game</button> 
+      </div>
       <div className="card-grid"> 
         {cards.map(card => (
          <SingleCard 
