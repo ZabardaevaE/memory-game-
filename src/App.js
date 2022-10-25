@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css';
 import SingleCard from './components/SingleCard';
+
 //add matched property to the cards
 const cardImages = [
   {"src": "/img/christmas-balls.png", matched: false},
@@ -91,6 +92,79 @@ function App() {
 
   return (
     <div className="App">
+      <div class="snowflakes" aria-hidden="true">
+    
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+ 
+  
+        <ul id="wire">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <br />
       <h1>Magic Memory</h1>
     {/*I use on click function to initiate the shuffleCards()  */}
       <button onClick={shuffledCards}>New Game</button> 
@@ -109,6 +183,7 @@ function App() {
       </div>
       <p>Turns: {turns}</p>
     </div>
+    </div>  
   );
 }
 
