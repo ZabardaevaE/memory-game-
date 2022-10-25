@@ -93,7 +93,7 @@ function App() {
 
   return (
     <div className="App">
-      <div class="snowflakes" aria-hidden="true">
+    <div class="snowflakes" aria-hidden="true">
     
     <div class="snowflake">
     ❅
@@ -169,18 +169,19 @@ function App() {
       <div className="centerer">
         <button onClick={shuffledCards}>New Game</button> 
       </div>
-      <div className="card-grid"> 
-        {cards.map(card => (
-         <SingleCard 
-          key={card.id} 
-          card={card}
-          handleChoice={handleChoice}
-          flipped={card === choiceOne || card === choiceTwo || card.matched}
-          disabled={disabled}
-         />
-          
-        ))}
-      </div>
+      <div className='board'>
+          <div className="card-grid"> 
+            {cards.map(card => (
+            <SingleCard 
+              key={card.id} 
+              card={card}
+              handleChoice={handleChoice}
+              flipped={card === choiceOne || card === choiceTwo || card.matched}
+              disabled={disabled}
+            />   
+            ))}
+          </div>
+      </div>   
       <p>Turns: {turns}</p>
     </div>
     </div>  
