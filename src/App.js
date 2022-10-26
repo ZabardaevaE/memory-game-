@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css';
 import './Button.css';
 import SingleCard from './components/SingleCard';
+import Tut from './components/Tut'
 
 //add matched property to the cards
 const cardImages = [
@@ -93,6 +94,7 @@ function App() {
 
   return (
     <div className="App">
+      
     <div class="snowflakes" aria-hidden="true">
     
     <div class="snowflake">
@@ -166,6 +168,7 @@ function App() {
         <br />
       <h1>Magic Memory</h1>
     {/*I use on click function to initiate the shuffleCards()  */}
+        <Tut />
       <div className="centerer">
         <button onClick={shuffledCards}>New Game</button> 
       </div>
