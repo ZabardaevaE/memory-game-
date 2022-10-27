@@ -166,12 +166,14 @@ function App() {
             <li></li>
         </ul>
         <br />
+       
       <h1>Magic Memory</h1>
     {/*I use on click function to initiate the shuffleCards()  */}
-        <Tut />
+       
       <div className="centerer">
         <button onClick={shuffledCards}>New Game</button> 
       </div>
+      <p>Sound</p><Tut />
       <div className='board'>
           <div className="card-grid"> 
             {cards.map(card => (
