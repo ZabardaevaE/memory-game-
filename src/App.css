@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  /* font-family: 'Lobster', cursive;
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  background: #1b1523;
+  color: green; */
 }
 
 .App {
@@ -11,6 +17,9 @@
   /* width: 300;
   height: auto; */
 
+}
+p {
+  margin-bottom: 4%;
 }
 
 

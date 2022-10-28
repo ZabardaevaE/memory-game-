@@ -1,77 +1,78 @@
+<a href="zenas-memory-game.surge.sh">Play</a>
+Magic Memory
+A single-page application (SPA) which allows the user to manage keto recipes.
 
+💻 Click here to see our live project!
+ℹ️ About
+It's a CRUD (Create Read Update Delete) app. This is a group project by Zena, George and Asela.
 
+We used the Scavenger Hunt app as a guide when writing it. It was written in a step by step process. We collaborated via GitHub.
 
-# Getting Started with Create React App
+This app uses the Model View Controller framework. The user has the ability to add, edit and delete recipes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📝 Planning & Problem Solving -
+We began our planning on a Trello board. In the user stories, we listed functions to create for that user story with brief information.
 
-## Available Scripts
+Trello board image: TBImage
 
-In the project directory, you can run:
+Wireframes: Wireframes
 
-### `npm start`
+Block diagram of how components relate to each other: BlockDiagram
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+When we had problems, we spent time together working on fixing it. Screen sharing on Zoom was used allowing all team members to see the problem.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🚀 Cool Tech
+This is an Express app developed in the Node.js platform. There is JavaScript, HTML, CSS and SQL databases. The database uses PSQL. Three CSS files are used. Bcrypt was used to hash passwords for security purposes.
 
-### `npm test`
+😧 Bugs to Fix
+We didn't use branches at the beginning which resulted in problems. We then realised the importance of using branches and listed the method of doing it based on the instructions and the IAs assistance. After using branches, there were some errors and incidents of merge conflicts. We worked together to fix them.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Creating the edit function took a lot of time to do with a major error ocurring.
 
-### `npm run build`
+The logout function kept having problems. We were able to get it mostly functioning properly in our local versions.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+😣 Lessons Learnt
+It took time to get used to how branches work and the correct way to use them. We encountered problems with collaborating via GitHub as some mistakes were made in the process of collaboration. These mistakes were fixed. We should have used branches and developed the steps on how to collaborate from the very beginning of the project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Magic Memory Game
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- I created a React Magic Memory Game as a final project of General Assembly's Software Engineering Immersive Course. This is frontend project created using React JavaScript Library, Howler JavaScript Audio Library, and CSS  
 
-### `npm run eject`
+## :computer: [Click here](https://zenas-memory-game.surge.sh/) to see my live project!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## :speech_balloon: About
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- How to use Magic Memory Game.
+To start the game just press the New Game button. 
+Do not forget to toggle the Add Music to add more Magic to your experience.
+![](public/img/Sound-Button.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## :memo: Planning & Problem Solving
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- I started planning with working on game logic.
+Creating the wireframe for the page.
+![](public/img/Wireframing.png)
+Finding and adjusting images.
+The Audio Library I hoped to use was depreciated and I found Howler JS Audio Library and use it instead.
 
-## Learn More
+## :rocket: Cool tech
+- Programming languages:
+  React
+  React Hooks: useState and useEffect
+  CSS
+  Howler JavaScript Audio Library
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## :Animations
+Anything else you'd be proud to show your parents
+😱 Bugs to fix 💩
+Anything a little broken
+Anything a LOT broken
+Buttons to not click too many times (cause its broken 😒)
+😭 Lessons learnt
+What I would do differently if I could wind back the clock...
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# memory-game-
+✅ Future features
+Cool things I would add if I can keep working on this
 
 
 

@@ -1,29 +1,6 @@
-// import './SingleCard.css'
-
-// export default function SingleCard({ card, handleChoice, flipped, disabled }) {
-//   //I create handleClick function to update state in App.js component and it will be choiceOne or choiceTwo states 
-//     const handleClick = () => {
-//        if (!disabled) {
-//         handleChoice(card)
-//        } 
-//     }
-
-//   return(
-//     <div className="card">
-//           <div className={flipped ? "flipped" : ""}>          
-//             <img className="front" src={card.src} alt="card front" />
-//             <img className="back"
-//              src="/img/back.png"
-//              onClick={handleClick}
-//              alt="card back"  />
-//           </div>
-//     </div> 
-
-//   )
-// }
 import './SingleCard.css'
 
-export default function SingleCard({ card, handleChoice, flipped, disabled, backTheme }) {
+export default function SingleCard({ card, handleChoice, flipped, disabled }) {
   //I create handleClick function to update state in App.js component and it will be choiceOne or choiceTwo states 
     const handleClick = () => {
        if (!disabled) {
@@ -36,7 +13,7 @@ export default function SingleCard({ card, handleChoice, flipped, disabled, back
           <div className={flipped ? "flipped" : ""}>          
             <img className="front" src={card.src} alt="card front" />
             <img className="back"
-             src={backTheme}
+             src="/img/back.png"
              onClick={handleClick}
              alt="card back"  />
           </div>
@@ -44,3 +21,26 @@ export default function SingleCard({ card, handleChoice, flipped, disabled, back
 
   )
 }
+// import './SingleCard.css'
+
+// export default function SingleCard({ card, handleChoice, flipped, disabled, backTheme }) {
+//   //I create handleClick function to update state in App.js component and it will be choiceOne or choiceTwo states 
+//     const handleClick = () => {
+//        if (!disabled) {
+//         handleChoice(card)
+//        } 
+//     }
+
+//   return(
+//     <div className="card">
+//           <div className={flipped ? "flipped" : ""}>          
+//             <img className="front" src={card.src} alt="card front" />
+//             <img className="back"
+//              src={backTheme}
+//              onClick={handleClick}
+//              alt="card back"  />
+//           </div>
+//     </div> 
+
+//   )
+// }
